@@ -1,0 +1,54 @@
+Generated at 2018-03-03 18:33:38 +0000
+SyntaxError: /home/vagrant/.chef/local-mode-cache/cache/cookbooks/lamp/recipes/web.rb:12: syntax error, unexpected tIDENTIFIER, expecting ']'
+  #hostname:#{node['hostname']}
+                            ^
+/home/vagrant/.chef/local-mode-cache/cache/cookbooks/lamp/recipes/web.rb:13: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  #memory:#{node['memory']['total']}
+                        ^
+/home/vagrant/.chef/local-mode-cache/cache/cookbooks/lamp/recipes/web.rb:13: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  #memory:#{node['memory']['total']}
+                                 ^
+/home/vagrant/.chef/local-mode-cache/cache/cookbooks/lamp/recipes/web.rb:14: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+  #platform:#{node['platform']}
+                            ^
+/home/vagrant/.chef/local-mode-cache/cache/cookbooks/lamp/recipes/web.rb:18: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+service 'apache2' do
+                ^
+/home/vagrant/.chef/local-mode-cache/cache/cookbooks/lamp/recipes/web.rb:18: unterminated string meets end of file
+/home/vagrant/.chef/local-mode-cache/cache/cookbooks/lamp/recipes/web.rb:18: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/mixin/from_file.rb:30:in `instance_eval'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/mixin/from_file.rb:30:in `from_file'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/cookbook_version.rb:233:in `load_recipe'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/run_context.rb:338:in `load_recipe'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/run_context.rb:294:in `block in include_recipe'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/run_context.rb:293:in `each'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/run_context.rb:293:in `include_recipe'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/dsl/include_recipe.rb:26:in `include_recipe'
+/home/vagrant/.chef/local-mode-cache/cache/cookbooks/lamp/recipes/default.rb:14:in `from_file'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/mixin/from_file.rb:30:in `instance_eval'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/mixin/from_file.rb:30:in `from_file'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/cookbook_version.rb:233:in `load_recipe'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/run_context.rb:338:in `load_recipe'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/run_context/cookbook_compiler.rb:141:in `block in compile_recipes'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/run_context/cookbook_compiler.rb:138:in `each'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/run_context/cookbook_compiler.rb:138:in `compile_recipes'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/run_context/cookbook_compiler.rb:75:in `compile'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/run_context.rb:187:in `load'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/policy_builder/expand_node_object.rb:97:in `setup_run_context'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/client.rb:511:in `setup_run_context'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/client.rb:281:in `run'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/application.rb:295:in `block in fork_chef_client'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/application.rb:283:in `fork'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/application.rb:283:in `fork_chef_client'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/application.rb:248:in `block in run_chef_client'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/application.rb:236:in `run_chef_client'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/application/client.rb:464:in `sleep_then_run_chef_client'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/application/client.rb:451:in `block in interval_run_chef_client'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/application/client.rb:450:in `loop'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/application/client.rb:450:in `interval_run_chef_client'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/application/client.rb:434:in `run_application'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib/chef/application.rb:59:in `run'
+/opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/bin/chef-client:26:in `<top (required)>'
+/usr/bin/chef-client:58:in `load'
+/usr/bin/chef-client:58:in `<main>'
